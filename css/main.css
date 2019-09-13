@@ -99,7 +99,7 @@ header nav ul li a 	{
 .top-section,
 .bottom-section {
 								 display: flex;
-								 justify-content: left;
+								 justify-content: space-around;
 								 align-items: center;
 								 flex-flow: row wrap;
 							  }
@@ -113,7 +113,10 @@ header nav ul li a 	{
 									border-bottom: 3px solid #77a466;
 								}
 
-.main-title {
+.main-title { display: flex;
+							flex-flow: column nowrap;
+							align-items: center;
+							margin: 0 30px;
 							height: auto;
 						}
 
@@ -289,7 +292,6 @@ h1 {
 		.top-section,
 		.bottom-section {
 											display: flex;
-											justify-content: center;
 											align-items: flex-start;
 											flex-flow: row wrap;
 										 }
@@ -503,11 +505,13 @@ header nav ul li a {
 .section-one,
 .section-two,
 .section-three {
-								width: 33%;
+								width: 29%;
 								height: auto;
-								float: left;
 								border-top: 1px solid #eee;
 							 }
+.section-one {width: 17%;}
+.section-two {width: 29%;}
+.section-three {width: 17%;}
 
 .section-one h4 {
 									padding: 10px 0;
@@ -559,5 +563,5 @@ footer span {
 							color: #77a466;
 							font-size: 14px;
 						}
-						
+
 }
